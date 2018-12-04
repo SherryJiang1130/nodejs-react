@@ -1,0 +1,168 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #f6f6f6;
+}
+
+.clearFloat {
+  overflow: hidden;
+}
+.floatR {
+  float: right;
+}
+.wrap {
+  display: flex;
+  height: 100vh;
+  .leftMenu {
+    width: 15%;
+    background: goldenrod;
+    .filterInput {
+      box-sizing: border-box;
+      padding: 0px 15px;
+      input {
+        box-sizing: border-box;
+        outline: none;
+        width: 100%;
+        border: 1px solid red;
+        line-height: 28px;
+        border-radius: 5px;
+        padding: 0px 8px;
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0px;
+    }
+    li {
+      padding: 5px 10px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      width: 80%;
+      display: inline-block;
+      word-break: break-all;
+    }
+    .liStyle {
+      position: relative;
+      border-bottom: 1px solid grey;
+      .remove {
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+        color: red;
+      }
+    }
+  }
+  #container {
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    .RichEditor-root {
+      height: 97%;
+      padding: 10px;
+      .tooltip {
+        position: absolute;
+        right: 30px;
+      }
+      .styleList {
+        background: gainsboro;
+        border-radius: 5px;
+        position: fixed;
+        z-index: 2;
+        .RichEditor-controls {
+          span {
+            display: inline-block;
+            font-size: 14px;
+            padding: 5px;
+            cursor: pointer;
+          }
+          .RichEditor-activeButton {
+            background: #ffb7b7;
+          }
+         
+        }
+        .pickColor {
+          .pickColor_div {
+            width: 42px;
+            height: 15px;
+            background: #E68989;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .RichEditor-editor {
+        border: 1px solid #000;
+        min-height: 90%;
+        position: relative;
+        top: 63px;
+        z-index: 1;
+        padding: 10px;
+        .fileTitle {
+          padding: 5px;
+          border-bottom: 1px solid gray;
+          input {
+            width: 96%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            border-color: transparent;
+            background: transparent;
+            outline: none;
+            padding-left: 5px;
+          }
+        }
+        .DraftEditor-root {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+.Bold {
+  font-weight: bold;
+}
+.Italic {
+  font-style: italic;
+}
+.Underline {
+  text-decoration: underline;
+}
+.Monospace {
+  font-family: monospace;
+}
+.H1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.H2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.H3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+.H4 {
+  font-weight: bold;
+}
+.H5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+.H6 {
+  font-size: 0.67em;
+  font-weight: bold;
+}
+.align-right{
+  text-align: right;
+}
+.align-center{
+  text-align: center;
+}
+.align-left{
+  text-align: left;
+}

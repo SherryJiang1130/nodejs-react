@@ -1,0 +1,28 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./src/index.html -p 8203 -d ./dev --no-source-maps",
+    "dist": "parcel build ./src/index.html --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "draft-js": "^0.10.5",
+    "less": "^3.8.1",
+    "react": "^16.6.3",
+    "react-color": "^2.14.1",
+    "react-dom": "^16.6.3",
+    "react-input-color": "^1.7.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
+}
